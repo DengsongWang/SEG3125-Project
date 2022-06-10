@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>appointment1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #8b8b8b7b;
+
+        }
+
+        .row {
+            align-items: center;
+        }
+        
+        .btn {
+            background-color: #ffffff;
+            border: none;
+            color: #00CCCC;
+            /* padding: 12px 16px; */
+            font-size: 140%;
+            cursor: pointer;
+            width: 24%;
+
+        }
+
+        .btn:hover {
+            background-color: #6161615d;
+        }
+    </style>
+   
+        
+</head>
+
+<body>
+
+    <div class="container-fluid" style="background-color:#00CCCC;height:70%;min-width: 250px;">
+        <div class="row">
+            <div class="col-4">
+                <img src="img/logo.PNG" width="200" height="100">
+                
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button type="button" class="btn text-white" style="font-size:20px;width: 100%;background-color: #00CCCC;">
+                    <h4>Login or Register</h4>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="color:#00CCCC;padding-top: 3%;">
+            <strong>Make an appointment</strong>
+        </h1> 
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 style="color:#00CCCC;padding-top: 3%;">Services Type: </h2>
+            </div>
+            <div class="col">
+                <div class="select-group">
+                    <select id="servicesType">
+                        <option value="0"></option>
+                        <option value="1">Diagnosis</option>
+                        <option value="2">Vaccine</option>
+                        <option value="3">Surgery</option>
+                        <option value="4">Dentistry</option>
+                        <option value="5">Usual care</option>
+    
+                        </option>
+                    </select>
+    
+                </div>
+            </div>
+                
+            
+            <div class="col">
+                <h4 class = "text-body"style="padding-top: 3%;">Addtional services: </h4>
+            </div>
+            <div class="col">
+                <div class="select-group">
+                    <select id="servicesType">
+                        <option value="0"></option>
+                        <option value="1">Diagnosis</option>
+                        <option value="2">Vaccine</option>
+                        <option value="3">Surgery</option>
+                        <option value="4">Dentistry</option>
+                        <option value="5">Usual care</option>
+    
+                        </option>
+                    </select>
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h2 style="color:#00CCCC;padding-top: 3%;">Expert: </h2>
+            </div>
+            <div class="col-3">
+                <div class="select-group">
+                    <select id="servicesType">
+                        <option value="0"></option>
+                        <option value="1">Dengsong Wang</option>
+                        <option value="2">Joe Wu</option>
+                        <option value="3">Shan Wang</option>
+                        <option value="4">Allan Williamson</option>
+                        
+    
+                        </option>
+                    </select>
+    
+                </div>
+            </div>
+            <div class="col-6"></div>
+                
+        </div>
+        
+    </div>
+
+    <div class="container" style="height:160px">
+        <div class="row">
+            <div class="col-3">
+                <h2 style="color:#00CCCC;padding-top: 3%;">Date and Time: </h2>
+            </div>
+            <div class="col-3">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+                <link href="datetimepicker.css" rel="stylesheet">
+                <script src="datetimepicker.js"></script>
+                <div id="picker">
+                    <script>$('#picker').dateTimePicker();</script>
+                </div>
+                <input type="hidden" id="result" value="">
+            </div>
+            <div class="col-6"></div>
+                
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-8" >
+                <button class="btn" onclick="location.href='home.html'" style="width: 85%;background-color: #666666;color: #ffffff;">Back to previous page
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top:3%">
+        <div class="row">
+            <div class="col-4 offset-8" >
+                <button class="btn" onclick="location.href='appointment2.html'" style="width: 85%;background-color: #00CCCC;color: #ffffff;">Next
+                </button>
+            </div>
+        </div>
+    </div>
+                
+            
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+
+
+
+  
+    
+
+
+
+</body>
+
+</html>
